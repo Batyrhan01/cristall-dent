@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru" data-type="service" data-radius="soft" data-buttons="arrow" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кристалл-Дент: стоматология в Астане на Молдагуловой</title>
+<meta name="description" content="Лечение, протезы, импланты, брекеты и детский приём. Каждый день с 9:00 до 21:00, консультация бесплатная, запись в WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Кристалл-Дент: стоматология в Астане на Молдагуловой">
+<meta property="og:description" content="Лечение, протезы, импланты, брекеты и детский приём. Каждый день с 9:00 до 21:00, консультация бесплатная, запись в WhatsApp.">
+<meta property="og:image" content="https://batyrhan01.github.io/cristall-dent/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://batyrhan01.github.io/cristall-dent/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b2f8a">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<style>
+:root {
+  --p-bg: #ffffff; --p-surface: #eaf2fb; --p-ink: #0a1b47; --p-muted: #4c5b7d;
+  --p-accent: #0b2f8a; --p-accent-ink: #ffffff; --p-action: #0b2f8a; --p-action-ink: #ffffff;
+  --p-inv-bg: #0b2f8a; --p-inv-surface: #1b3f9a; --p-inv-ink: #ffffff; --p-inv-muted: #c5d4f2;
+  --p-inv-accent: #ffffff; --p-inv-accent-ink: #0a1b47; --p-inv-action: #ffb23e; --p-inv-action-ink: #0a1b47;
+  --font-display: "Rubik", system-ui, sans-serif;
+  --font-text: "Rubik", system-ui, sans-serif;
+  --display-weight: 500;
+  --display-tracking: -0.025em;
+  --display-tracking-xl: -0.03em;
+  --ly-scale: 0.98;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<style>
+.brand { display: inline-flex; align-items: center; gap: 10px; font: 600 20px/1 var(--font-display); letter-spacing: -.01em; white-space: nowrap; }
+.brand__t { width: 31px; height: 40px; }
+/* первый экран: огранённый зуб из логотипа собирается из граней один раз */
+.hero--split { background: var(--bg); color: var(--ink); }
+.hero--split h1 { font-size: clamp(36px, 2.1vw + 27px, 60px); }
+.hero--split .hero__media.stone { display: grid; place-items: center; background: none; overflow: visible; height: 100%; min-height: 0; }
+.stone svg { width: auto; height: min(100%, 600px); max-width: 100%; overflow: visible; }
+.stone polygon { stroke-width: .8; stroke-linejoin: round; }
+@media (prefers-reduced-motion: no-preference) {
+  .stone polygon { animation: facet .9s cubic-bezier(.2,.75,.2,1) both; animation-delay: calc(var(--i) * 22ms); }
+  @keyframes facet { from { transform: translate(var(--x), var(--y)); opacity: 0; } }
+}
+/* один зуб, четыре кадра */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; list-style: none; padding: 0; margin: 0; }
+.steps li { display: flex; flex-direction: column; }
+.steps h3 { font: 500 22px/1.25 var(--font-display); letter-spacing: -.01em; }
+.steps p { color: var(--muted); margin: 6px 0 16px; }
+.steps .frame { aspect-ratio: 238 / 318; height: auto; margin-top: auto; }
+/* каналы: семь снимков одной лентой */
+.film { display: grid; grid-template-columns: 158fr 158fr 160fr 116fr 120fr 117fr 118fr; gap: 6px; }
+.film img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; display: block; border-radius: 4px; }
+.film-m { display: none; width: 100%; height: auto; border-radius: 8px; }
+.hero--split .hero__text { align-self: center; }
+#kanaly, #uslugi, #otzyv, #zapis { min-height: 0; height: auto; }
+/* карточки */
+.docs article { padding: 32px; background: var(--surface); border-radius: var(--r-lg); }
+.docs h3, .serv h3 { font: 500 22px/1.25 var(--font-display); letter-spacing: -.01em; }
+.docs .t-label { margin: 8px 0 16px; }
+.docs blockquote { margin-top: 20px; }
+.docs blockquote p + p { margin-top: 8px; }
+.serv ul { list-style: none; padding: 0; margin: 20px 0 0; }
+.serv li { padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); }
+.phones { list-style: none; padding: 0; }
+.phones li + li { margin-top: 8px; }
+.ask { padding: 48px; background: #fff; border-radius: var(--r-lg); }
+.room { aspect-ratio: 1100 / 928; height: auto; }
+.footer .btn--xl { min-width: 0; white-space: normal; }
+.footer__address { overflow-wrap: anywhere; }
+@media (max-width: 1023px) { .steps { grid-template-columns: 1fr 1fr; } .steps .frame { max-width: 340px; width: 100%; } }
+@media (max-width: 1023px) { .hero--split .hero__media.stone { height: auto; } .stone svg { height: min(38svh, 420px); } }
+@media (max-width: 639px) {
+  .hero--split { height: auto !important; min-height: calc(100svh - 56px); }
+  .hero--split .stone svg { height: min(34svh, 320px); }
+  .brand { font-size: 18px; } .brand__t { width: 28px; height: 36px; }
+  .steps { gap: 24px 12px; } .steps p { font-size: 15px; }
+  .film { display: none; } .film-m { display: block; }
+  .ask, .docs article { padding: 24px; }
+  .hero--split h1 { font-size: 36px; }
+  .actionbar { display: grid; grid-template-columns: auto minmax(0, 1fr); }
+  .actionbar .btn { white-space: nowrap; padding-inline: 12px; }
+}
+</style>
+</head>
+<body>
+<!-- type: service. hero split, nav split, close type, footer visit, rhythm dark-band, buttons arrow, mark: огранённый зуб из логотипа. moments: word-highlight in #otzyv -->
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">К содержанию</a>
+    <a class="nav__logo" href="#top" aria-label="Кристалл-Дент, в начало"><span class="brand"><svg class="brand__t" viewBox="36 28 328 416" aria-hidden="true"><polygon points="60,90 120,40 130,122" fill="#9fd0fb" stroke="#9fd0fb" style="--x:-87px;--y:-95px;--i:0"/><polygon points="120,40 200,72 130,122" fill="#d6ecff" stroke="#d6ecff" style="--x:-45px;--y:-99px;--i:1"/><polygon points="200,72 200,152 130,122" fill="#8cc4f8" stroke="#8cc4f8" style="--x:-21px;--y:-73px;--i:2"/><polygon points="200,72 270,122 200,152" fill="#b9defd" stroke="#b9defd" style="--x:21px;--y:-73px;--i:3"/><polygon points="200,72 280,40 270,122" fill="#ffffff" stroke="#ffffff" style="--x:45px;--y:-99px;--i:4"/><polygon points="280,40 340,90 270,122" fill="#7dbbf5" stroke="#7dbbf5" style="--x:87px;--y:-95px;--i:5"/><polygon points="340,90 352,180 270,122" fill="#3f9aec" stroke="#3f9aec" style="--x:109px;--y:-63px;--i:6"/><polygon points="352,180 288,222 270,122" fill="#2f86dd" stroke="#2f86dd" style="--x:93px;--y:-32px;--i:7"/><polygon points="200,152 270,122 288,222" fill="#8cc4f8" stroke="#8cc4f8" style="--x:47px;--y:-38px;--i:8"/><polygon points="200,152 288,222 200,234" fill="#58a9f0" stroke="#58a9f0" style="--x:26px;--y:-12px;--i:9"/><polygon points="200,152 200,234 112,222" fill="#c4e3fe" stroke="#c4e3fe" style="--x:-26px;--y:-12px;--i:10"/><polygon points="130,122 200,152 112,222" fill="#eaf5ff" stroke="#eaf5ff" style="--x:-47px;--y:-38px;--i:11"/><polygon points="130,122 112,222 48,180" fill="#b3dafc" stroke="#b3dafc" style="--x:-93px;--y:-32px;--i:12"/><polygon points="60,90 130,122 48,180" fill="#d6ecff" stroke="#d6ecff" style="--x:-109px;--y:-63px;--i:13"/><polygon points="48,180 112,222 82,272" fill="#7dbbf5" stroke="#7dbbf5" style="--x:-107px;--y:3px;--i:14"/><polygon points="352,180 318,272 288,222" fill="#1f6fc6" stroke="#1f6fc6" style="--x:107px;--y:3px;--i:15"/><polygon points="112,222 200,234 200,288" fill="#8cc4f8" stroke="#8cc4f8" style="--x:-26px;--y:20px;--i:16"/><polygon points="200,234 288,222 200,288" fill="#3f9aec" stroke="#3f9aec" style="--x:26px;--y:20px;--i:17"/><polygon points="112,222 200,288 164,332" fill="#58a9f0" stroke="#58a9f0" style="--x:-37px;--y:42px;--i:18"/><polygon points="112,222 164,332 82,272" fill="#9fd0fb" stroke="#9fd0fb" style="--x:-73px;--y:39px;--i:19"/><polygon points="82,272 164,332 104,398" fill="#58a9f0" stroke="#58a9f0" style="--x:-75px;--y:80px;--i:20"/><polygon points="164,332 138,432 104,398" fill="#2f86dd" stroke="#2f86dd" style="--x:-58px;--y:117px;--i:21"/><polygon points="288,222 200,288 236,332" fill="#1f6fc6" stroke="#1f6fc6" style="--x:37px;--y:42px;--i:22"/><polygon points="288,222 236,332 318,272" fill="#2f86dd" stroke="#2f86dd" style="--x:73px;--y:39px;--i:23"/><polygon points="318,272 236,332 296,398" fill="#1a60b0" stroke="#1a60b0" style="--x:75px;--y:80px;--i:24"/><polygon points="236,332 262,432 296,398" fill="#154f96" stroke="#154f96" style="--x:58px;--y:117px;--i:25"/></svg><span>Кристалл-Дент</span></span></a>
+    <nav class="nav__links" aria-label="Разделы">
+      <div class="nav__item"><a class="nav__link" href="#raboty">Работы</a></div>
+      <div class="nav__item"><a class="nav__link" href="#uslugi">Услуги</a></div>
+      <div class="nav__item"><a class="nav__link" href="#vrachi">Врачи</a></div>
+      <div class="nav__item"><a class="nav__link" href="#contact">Адрес</a></div>
+    </nav>
+    <div class="nav__actions"><a class="btn btn--primary" href="#zapis">Записаться на приём</a></div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Меню"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split ground-inverse" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-6">
+        <h1 id="hero-h">Стоматология в&nbsp;Астане на&nbsp;улице Молдагуловой</h1>
+        <p class="hero__lead">Принимаем каждый день с&nbsp;9:00 до&nbsp;21:00. Консультация бесплатная. В&nbsp;2ГИС у&nbsp;клиники 4,9 по&nbsp;142&nbsp;оценкам.</p>
+        <!-- Акция из рекламы 2ГИС, вернуть после ответа клиники: лечение кариеса со скидкой до 30% -->
+        <div class="btn-row"><a class="btn btn--primary" href="#zapis">Записаться на приём<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="tel:+77755531797">Позвонить в клинику</a></div>
+      </div>
+      <div class="hero__media stone span-5 start-8"><svg class="" viewBox="36 28 328 416" role="img" aria-label="Огранённый зуб из логотипа Кристалл-Дент"><polygon points="60,90 120,40 130,122" fill="#9fd0fb" stroke="#9fd0fb" style="--x:-87px;--y:-95px;--i:0"/><polygon points="120,40 200,72 130,122" fill="#d6ecff" stroke="#d6ecff" style="--x:-45px;--y:-99px;--i:1"/><polygon points="200,72 200,152 130,122" fill="#8cc4f8" stroke="#8cc4f8" style="--x:-21px;--y:-73px;--i:2"/><polygon points="200,72 270,122 200,152" fill="#b9defd" stroke="#b9defd" style="--x:21px;--y:-73px;--i:3"/><polygon points="200,72 280,40 270,122" fill="#ffffff" stroke="#ffffff" style="--x:45px;--y:-99px;--i:4"/><polygon points="280,40 340,90 270,122" fill="#7dbbf5" stroke="#7dbbf5" style="--x:87px;--y:-95px;--i:5"/><polygon points="340,90 352,180 270,122" fill="#3f9aec" stroke="#3f9aec" style="--x:109px;--y:-63px;--i:6"/><polygon points="352,180 288,222 270,122" fill="#2f86dd" stroke="#2f86dd" style="--x:93px;--y:-32px;--i:7"/><polygon points="200,152 270,122 288,222" fill="#8cc4f8" stroke="#8cc4f8" style="--x:47px;--y:-38px;--i:8"/><polygon points="200,152 288,222 200,234" fill="#58a9f0" stroke="#58a9f0" style="--x:26px;--y:-12px;--i:9"/><polygon points="200,152 200,234 112,222" fill="#c4e3fe" stroke="#c4e3fe" style="--x:-26px;--y:-12px;--i:10"/><polygon points="130,122 200,152 112,222" fill="#eaf5ff" stroke="#eaf5ff" style="--x:-47px;--y:-38px;--i:11"/><polygon points="130,122 112,222 48,180" fill="#b3dafc" stroke="#b3dafc" style="--x:-93px;--y:-32px;--i:12"/><polygon points="60,90 130,122 48,180" fill="#d6ecff" stroke="#d6ecff" style="--x:-109px;--y:-63px;--i:13"/><polygon points="48,180 112,222 82,272" fill="#7dbbf5" stroke="#7dbbf5" style="--x:-107px;--y:3px;--i:14"/><polygon points="352,180 318,272 288,222" fill="#1f6fc6" stroke="#1f6fc6" style="--x:107px;--y:3px;--i:15"/><polygon points="112,222 200,234 200,288" fill="#8cc4f8" stroke="#8cc4f8" style="--x:-26px;--y:20px;--i:16"/><polygon points="200,234 288,222 200,288" fill="#3f9aec" stroke="#3f9aec" style="--x:26px;--y:20px;--i:17"/><polygon points="112,222 200,288 164,332" fill="#58a9f0" stroke="#58a9f0" style="--x:-37px;--y:42px;--i:18"/><polygon points="112,222 164,332 82,272" fill="#9fd0fb" stroke="#9fd0fb" style="--x:-73px;--y:39px;--i:19"/><polygon points="82,272 164,332 104,398" fill="#58a9f0" stroke="#58a9f0" style="--x:-75px;--y:80px;--i:20"/><polygon points="164,332 138,432 104,398" fill="#2f86dd" stroke="#2f86dd" style="--x:-58px;--y:117px;--i:21"/><polygon points="288,222 200,288 236,332" fill="#1f6fc6" stroke="#1f6fc6" style="--x:37px;--y:42px;--i:22"/><polygon points="288,222 236,332 318,272" fill="#2f86dd" stroke="#2f86dd" style="--x:73px;--y:39px;--i:23"/><polygon points="318,272 236,332 296,398" fill="#1a60b0" stroke="#1a60b0" style="--x:75px;--y:80px;--i:24"/><polygon points="236,332 262,432 296,398" fill="#154f96" stroke="#154f96" style="--x:58px;--y:117px;--i:25"/></svg></div>
+    </div></div>
+  </section>
+
+  <section class="section" id="raboty" aria-labelledby="raboty-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="raboty-h">Один зуб в четырёх кадрах</h2><p>Лечение жевательного зуба, снимки врача клиники.</p></div>
+      <ol class="steps"><li><h3>1. До лечения</h3><p>Бороздки потемнели.</p><div class="frame frame--photo"><img class="frame__img" src="img/shag-1.webp" width="476" height="636" alt="До лечения: жевательный зуб" loading="lazy" data-source="client" data-subject="До лечения"></div></li><li><h3>2. Очистка</h3><p>Убрали поражённую часть.</p><div class="frame frame--photo"><img class="frame__img" src="img/shag-2.webp" width="476" height="636" alt="Очистка: жевательный зуб" loading="lazy" data-source="client" data-subject="Очистка"></div></li><li><h3>3. Подготовка</h3><p>Нанесли синий гель.</p><div class="frame frame--photo"><img class="frame__img" src="img/shag-3.webp" width="476" height="636" alt="Подготовка: жевательный зуб" loading="lazy" data-source="client" data-subject="Подготовка"></div></li><li><h3>4. Пломба</h3><p>Восстановили форму зуба.</p><div class="frame frame--photo"><img class="frame__img" src="img/shag-4.webp" width="476" height="636" alt="Пломба: жевательный зуб" loading="lazy" data-source="client" data-subject="Пломба"></div></li></ol>
+    </div>
+  </section>
+
+  <section class="section ground-surface" id="kanaly" aria-labelledby="kanaly-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="kanaly-h">Лечение каналов на снимках</h2><p>Слева рентген до лечения. Дальше видны инструменты в каналах и заполненные каналы, справа тот же зуб внутри.</p></div>
+      <div class="film"><img src="img/k1.webp" width="316" height="464" alt="Рентген до лечения" loading="lazy" data-source="client" data-subject="каналы 1"><img src="img/k2.webp" width="316" height="464" alt="Рентген с инструментами в каналах" loading="lazy" data-source="client" data-subject="каналы 2"><img src="img/k3.webp" width="320" height="464" alt="Рентген с инструментами, другой угол" loading="lazy" data-source="client" data-subject="каналы 3"><img src="img/k4.webp" width="232" height="464" alt="Рентген во время заполнения каналов" loading="lazy" data-source="client" data-subject="каналы 4"><img src="img/k5.webp" width="240" height="464" alt="Рентген после заполнения каналов" loading="lazy" data-source="client" data-subject="каналы 5"><img src="img/k6.webp" width="234" height="464" alt="Зуб внутри, каналы открыты" loading="lazy" data-source="client" data-subject="каналы 6"><img src="img/k7.webp" width="236" height="464" alt="Зуб внутри, каналы заполнены" loading="lazy" data-source="client" data-subject="каналы 7"></div>
+      <img class="film-m" src="img/kanaly.webp" width="480" height="480" alt="Семь снимков лечения каналов: пять рентгеновских и два фото" loading="lazy" data-source="client" data-subject="каналы">
+    </div>
+  </section>
+
+  <section class="section" id="uslugi" aria-labelledby="uslugi-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="uslugi-h">Услуги клиники</h2><p>Стоимость назовут на консультации, когда врач посмотрит зубы.</p></div>
+      <div class="grid serv">
+        <article class="span-4"><h3>Лечение зубов и дёсен</h3><ul><li>Кариес и пломбы</li><li>Лечение каналов</li><li>Реставрация</li><li>Лечение дёсен, аппарат Vector</li><!-- Лечение лазером, Zoom и Vector указаны в Instagram, клиника подтвердит --><li>Лечение лазером</li></ul></article>
+        <article class="span-4"><h3>Удаление и протезы</h3><ul><li>Удаление, в том числе зубов мудрости</li><li>Импланты</li><li>Коронки из металлокерамики</li><li>Съёмные протезы</li><li>Прицельный снимок зуба</li></ul></article>
+        <article class="span-4"><h3>Улыбка и дети</h3><ul><li>Приём ортодонта, брекеты</li><li>Отбеливание Zoom</li><li>Чистка зубов</li><li>Детский стоматолог</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ground-inverse" id="otzyv" data-moment="word-highlight" aria-labelledby="otzyv-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="otzyv-h">Отзыв о докторе Сагыныше</h2></div>
+      <div class="grid"><div class="span-7">
+        <p class="mo-wh__text">«Всё подробно объяснил, ответил на все мои вопросы и очень бережно провел лечение. Во время приёма чувствовала себя <strong>спокойно и комфортно</strong>, что для меня очень важно»</p>
+        <p class="muted" style="margin-top:24px">Zhani Zhani, 10 августа 2026, <a class="link" href="https://2gis.kz/astana/firm/70000001018101565/tab/reviews" target="_blank" rel="noopener">отзывы в 2ГИС</a></p>
+      </div><div class="frame frame--photo room span-5 start-8"><img class="frame__img" src="img/kabinet.webp" width="1100" height="928" alt="Кабинет клиники с бирюзовым креслом" loading="lazy" data-source="client" data-subject="кабинет"></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="vrachi" aria-labelledby="vrachi-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="vrachi-h">Врачи и отзывы</h2><p>Отзывы пересказаны из 2ГИС.</p></div>
+      <div class="grid docs">
+        <article class="span-6"><h3>Болат Аманжолович</h3><p class="t-label muted">Ортопед, директор клиники</p><p>Ставит коронки и съёмные протезы. Пациенты пишут о нём в 2ГИС с 2017 года. Детей не принимает.</p><blockquote><p>Подробно объяснил варианты и сделал съёмные протезы с металлокерамикой.</p><p class="t-small muted">Андрей П, 11 сентября 2020</p></blockquote></article>
+        <article class="span-6"><h3>Сагыныш Ерболович</h3><p class="t-label muted">Стоматолог</p><p>Лечит зубы. Пациенты называют его в отзывах 2020 и 2026 годов.</p><blockquote><p>Хороший врач, лёгкая рука.</p><p class="t-small muted">Kamilkaaaa Kamilka, 11 июля 2026</p></blockquote></article>
+        <article class="span-6"><h3>Для тех, кто боится</h3><blockquote><p>Пациентка очень боится стоматологов. Пишет, что врачи чуткие, работают быстро, и она придёт ещё.</p><p class="t-small muted">Гума Уябекова, 18 октября 2026</p></blockquote></article>
+        <article class="span-6"><h3>О детском приёме</h3><blockquote><p>Сыну удалили опухший зуб и всё почистили, он быстро поправился. Отзыв на казахском.</p><p class="t-small muted">Зеинур Утегенова, 23 марта 2025</p></blockquote></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ground-surface" id="zapis" aria-labelledby="zapis-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="span-6">
+          <div class="section-head"><h2 id="zapis-h">Запись на приём</h2></div>
+          <div class="faq"><div class="faq__item"><h3>Сколько стоит консультация?</h3><p>Она бесплатная. После осмотра врач назовёт сумму лечения.</p></div><div class="faq__item"><h3>Как оплатить?</h3><p>Картой, наличными, через банк или переводом с карты.</p></div>
+          <!-- Рассрочка из шапки Instagram, вернуть, когда клиника назовёт условия: <div class="faq__item"><h3>Есть рассрочка?</h3><p>Да.</p></div> -->
+          <div class="faq__item"><h3>Где оставить машину?</h3><p>В 2ГИС рядом с клиникой отмечены 24 парковки.</p></div></div>
+        </div>
+        <div class="ask span-5 start-8">
+          <form class="wa-form" action="https://wa.me/77755531797" method="get" target="_blank">
+            <div class="field"><label for="f-what">Что нужно</label><select id="f-what" name="text"><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: консультация.">Консультация</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: болит зуб.">Болит зуб</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: лечение зубов.">Лечение зубов</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: удаление зуба.">Удаление зуба</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: имплантация.">Имплантация</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: коронка или протез.">Коронка или протез</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: брекеты.">Брекеты</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: лечение дёсен.">Лечение дёсен</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: отбеливание.">Отбеливание</option><option value="Здравствуйте! Хочу записаться в Кристалл-Дент. Что нужно: приём ребёнка.">Приём ребёнка</option></select></div>
+            <div class="btn-row" style="margin-top:24px"><button class="btn btn--primary" type="submit">Записаться на приём<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></button></div>
+            <p style="margin-top:16px">Откроется WhatsApp с готовым текстом, останется нажать «Отправить».</p>
+          </form>
+          <ul class="phones" style="margin-top:32px">
+            <li><a class="link" href="tel:+77755531797">+7 775 553-17-97</a></li>
+            <li><a class="link" href="tel:+77172382076">+7 7172 38-20-76</a></li>
+            <li><a class="link" href="https://www.instagram.com/cristall.dent/" target="_blank" rel="noopener">Instagram @cristall.dent</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head"><h2 id="close-h">Приём каждый день</h2><p>До вокзала Астана-1 полтора километра.</p></div>
+      <a class="btn btn--primary btn--xl btn--wide" href="#zapis">Записаться на приём<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <address class="footer__address">Алии Молдагуловой,&nbsp;24,<br>Сарыаркинский район</address>
+          <p><a class="link" href="https://2gis.kz/astana/firm/70000001018101565" target="_blank" rel="noopener">Открыть маршрут в 2ГИС</a></p>
+        </div>
+        <div class="span-5 start-8 stack-4"><h3>Часы приёма</h3><dl class="hours" data-tz="Asia/Almaty"><dt data-days="mon-sun">Пн–вс</dt><dd>9:00–21:00</dd></dl></div>
+      </div>
+      <div class="footer__legal"><span>&copy; 2026 Кристалл-Дент. Имеются противопоказания, необходима консультация специалиста.</span></div>
+    </div>
+  </div>
+</footer>
+<nav class="actionbar" aria-label="Быстрая запись"><a class="btn btn--secondary" href="tel:+77755531797">Позвонить</a><a class="btn btn--primary" href="#zapis">Записаться на приём</a></nav>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
